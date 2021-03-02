@@ -13,35 +13,7 @@
 
 
 <div class = "chat_room">
-  <div class="messages">
-    <div class="upper-message">
-      <div class="message-user">
-        Tom
-      </div>
-      <div class="message-date">
-        2021/3/1(Mon) 12:24;15
-      </div>
-    </div>
-    <div class="message">
-      おはよう
-    </div>
-  </div>
-
-  <div class="messages">
-    <div class="upper-message">
-      <div class="message-user">
-        Sim
-      </div>
-      <div class="message-date">
-        2021/3/1(Mon) 12:27:30
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="message">
-        こんばんは
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 
